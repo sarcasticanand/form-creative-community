@@ -1,0 +1,8 @@
+{
+  "name": "form-creative-community",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FORM creative community prototype",
+  "scripts": { "test": "node tests/audit.cjs" },
+  "devDependencies": { "jsdom": "29.1.1" }
+}

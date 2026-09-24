@@ -29,3 +29,15 @@ GitHub Pages publishes the repository root. No build step or dependencies are re
 ## Image credits
 
 Desert artwork generated for FORM. Reference photography by Francesco Albertazzi and Ben Scott on Unsplash, and Erik Mclean on Pexels. Full source links appear in the demo’s feature guide and project details. Photos illustrate fictional portfolios.
+
+## Interaction audit — 25 September 2026
+
+Fixed a shared click handler that treated clicks inside dialogs as page navigation. Form inputs, labels, selectors, and dialog content now remain interactive. Long dialogs keep their close control visible, validation errors explain missing input, and status messages are visible inside dialogs.
+
+Navigation no longer depends on browser view transitions. Support and circle tabs have restorable URLs. Likes update card counts, introductions can be reviewed, the studio feed respects following, and insufficient balances/points show explanations.
+
+Validation: 15 automated interaction suites; 44 page/viewport combinations at 320, 390, 768, and 1280 pixels; browser checks with actual clicks and typing for publishing, introductions, comments, backing, and coin trades.
+
+Run regression checks with `npm ci && npm test`. These test dependencies are for development only; the website remains buildless.
+
+This audit repairs the prototype. A live community still requires real authentication, durable data, uploads, messaging, moderation, and production operations. Financial features remain simulations.
